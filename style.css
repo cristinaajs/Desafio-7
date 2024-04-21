@@ -1,0 +1,162 @@
+*,html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 30px 0;
+
+}
+
+p {
+    text-align: justify;
+}
+
+nav {
+    background-color: rgb(90, 8, 8);
+    width: auto;
+    padding: 15px 0;
+}
+
+nav a {
+    color:blanchedalmond;
+    text-decoration: none;
+    margin: 0 80px;
+}
+
+.central {
+    width:910px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.central p, .central img {
+    width: 50%;
+    display: block;
+    
+}
+
+
+#sobre{
+    background-color: rgb(178, 59, 59);
+    width: auto;
+    display: flex;
+}
+
+#sobre, #aprenda {
+    padding: 15px 0;
+}
+
+#sobre p{
+    margin-left: 15px;
+}
+
+#aprenda{
+    background-color: chocolate;
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#aprenda p {
+    margin-right: 15px;
+}
+
+#aprenda .central {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: coral;
+    width: auto;
+    padding: 15px;
+}
+
+footer img {
+    width: 25px;
+    margin: 0 30px;
+    padding-top: 10px;
+}
+
+@media (max-width: 400px) {
+    nav a {
+        margin: 0 2px;
+    }
+    .central {
+        display:block;
+    }
+    .central img {
+        width: 100%;
+    }
+    .central p, #sobre p, #aprenda p{
+        margin: 0;
+        padding: 15px;
+        width: auto;
+    }
+    footer img {
+        margin: 0 20px;
+    }
+}
+
+@media (min-width:401px) and (max-width:767px) {
+    nav a {
+        margin: 0 10px;
+    }
+    .central {
+        display:block;
+    }
+    .central img {
+        width: 100%;
+    }
+    .central p, #sobre p, #aprenda p{
+        margin: 0;
+        padding: 15px;
+        width: auto;
+    }
+    footer img {
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav a {
+        margin: 0 40px;
+    }
+    .central {
+        display:block;
+    }
+    .central img {
+        width: 100%;
+    }
+    .central p, #sobre p, #aprenda p{
+        margin: 0;
+        padding: 15px;
+        width: auto;
+    }
+    footer img {
+        margin: 0 20px;
+    }
+    
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .central {
+        display:block;
+    }
+    .central img {
+        width: 100%;
+    }
+    .central p, #sobre p, #aprenda p{
+        margin: 0;
+        padding: 15px;
+        width: auto;
+    }
+}
